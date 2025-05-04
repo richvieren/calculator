@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Mode ROI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator-container">
+        <div class="calculator-wrapper">
+            <div class="calculator-header">
+                <h1>BEAST MODE ROI CALCULATOR</h1>
+                <p class="tagline">Stop wasting time & money on DIY content</p>
+            </div>
+            
+            <div class="calculator-body">
+                <div class="input-section">
+                    <h2>Your Current Process</h2>
+                    
+                    <div class="input-group">
+                        <label for="hourlyRate">Your Hourly Rate ($/hr)</label>
+                        <input type="number" id="hourlyRate" value="100">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="reelsPerWeek">Reels Per Week</label>
+                        <input type="number" id="reelsPerWeek" value="5">
+                    </div>
+                    
+                    <div class="input-group">
+                        <h3>Time Spent Per Reel (minutes)</h3>
+                        <div id="tasksList" class="tasks-list">
+                            <!-- Tasks will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="reelPrice">Beast Mode Reel Price ($)</label>
+                        <input type="number" id="reelPrice" value="30">
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <h2>Results</h2>
+                    
+                    <div class="time-investment">
+                        <h3>Time Investment</h3>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <p class="stat-label">Minutes per Reel</p>
+                                <p class="stat-value" id="minutesPerReel">110</p>
+                            </div>
+                            <div class="stat-box">
+                                <p class="stat-label">Hours per Week</p>
+                                <p class="stat-value" id="hoursPerWeek">9.2</p>
+                            </div>
+                            <div class="stat-box">
+                                <p class="stat-label">Hours per Month</p>
+                                <p class="stat-value" id="hoursPerMonth">39.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="money-lost">
+                        <h3>Money Lost</h3>
+                        <div class="stats-grid money-grid">
+                            <div class="stat-box">
+                                <p class="stat-label">Per Week</p>
+                                <p class="stat-value red" id="moneyPerWeek">$917</p>
+                            </div>
+                            <div class="stat-box">
+                                <p class="stat-label">Per Month</p>
+                                <p class="stat-value red" id="moneyPerMonth">$3,967</p>
+                            </div>
+                            <div class="stat-box">
+                                <p class="stat-label">Per Year</p>
+                                <p class="stat-value red" id="moneyPerYear">$47,604</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="savings-box">
+                        <h3>BEAST MODE SAVINGS</h3>
+                        <div class="savings-flex">
+                            <div class="savings-item">
+                                <p class="savings-label">DIY Cost Per Year</p>
+                                <p class="savings-value red" id="diyCost">$47,604</p>
+                            </div>
+                            <div class="savings-symbol">-</div>
+                            <div class="savings-item">
+                                <p class="savings-label">Beast Mode Cost</p>
+                                <p class="savings-value" id="beastModeCost">$7,800</p>
+                            </div>
+                            <div class="savings-symbol">=</div>
+                            <div class="savings-item">
+                                <p class="savings-label">Annual Savings</p>
+                                <p class="savings-value green" id="annualSavings">$39,804</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
