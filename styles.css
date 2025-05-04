@@ -190,7 +190,7 @@ body {
 }
 
 .green {
-  color: #2ECC71;
+  color: #e7a83e; /* Beast Mode gold */
 }
 
 /* Savings box */
@@ -239,11 +239,24 @@ body {
 
 .savings-value.green {
   font-size: 1.5rem;
+  color: #e7a83e; /* Beast Mode gold */
 }
 
 .savings-symbol {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+  .savings-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .savings-symbol {
+    transform: rotate(90deg);
+  }
 }
 
 /* Remove spinner from number inputs */
