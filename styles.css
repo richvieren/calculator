@@ -230,11 +230,13 @@ body {
 .savings-value {
   font-size: 1.25rem;
   font-weight: 700;
+  color: white; /* All values in the savings box are white for readability */
 }
 
 .savings-value.red {
   text-decoration: line-through;
   opacity: 0.8;
+  color: white; /* Changed from red to white for better visibility */
 }
 
 .savings-value.green {
@@ -245,6 +247,11 @@ body {
 .savings-symbol {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* DIY Cost label in the red box */
+#diyCost {
+  color: white; /* Ensure this is white, not red */
 }
 
 /* For small screens */
